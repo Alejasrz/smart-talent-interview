@@ -1,0 +1,45 @@
+<div class="container">
+    <h1 class="title">Editar Tarea</h1>
+
+    <form [formGroup]="taskForm" (ngSubmit)="onSaveTask()" class="form_div">
+        <mat-form-field appearance="fill">
+          <mat-label>Título</mat-label>
+          <input matInput formControlName="title">
+          <mat-error *ngIf="taskForm.get('title')?.hasError('required')">
+            El título es obligatorio
+          </mat-error>
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Descripción</mat-label>
+          <textarea matInput formControlName="description"></textarea>
+          <mat-error *ngIf="taskForm.get('description')?.hasError('required')">
+            La descripción es obligatoria
+          </mat-error>
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Estado</mat-label>
+          <mat-select formControlName="status">
+            <mat-option value="Pendiente">Pendiente</mat-option>
+            <mat-option value="Completada">Completada</mat-option>
+          </mat-select>
+          <mat-error *ngIf="taskForm.get('status')?.hasError('required')">
+            El estado es obligatorio
+          </mat-error>
+        </mat-form-field>
+      
+        <div class="buttons">
+          <button mat-stroked-button color="warn" type="button" (click)="onCancel()">
+            Cancelar
+          </button>
+
+          <button mat-raised-button color="primary" type="submit" [disabled]="!taskForm.valid">
+            Editar
+          </button>
+        </div>
+        
+      </form>
+    
+</div>
+  

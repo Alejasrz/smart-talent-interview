@@ -1,0 +1,53 @@
+.container {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.filter_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-column-check {
+    width: 70px;
+}
+
+.mat-column-actions {
+    width: 200px;
+}
+
+.mat-column-status {
+    width: 200px;
+}
+
+.completed-status {
+  color: #3db126;
+  font-weight: bold;
+}
+
+.pending-status {
+  color: #e43333; 
+  font-weight: bold;
+}
+
+.edit_button {
+    color: lightskyblue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.delete_button {
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.mat-cell {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
