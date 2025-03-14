@@ -65,7 +65,6 @@ export class TasksListComponent {
         task
       }
     });
-  
   }
 
   deleteTask(task: ITask): void {
@@ -76,7 +75,6 @@ export class TasksListComponent {
         idTask: task.id
       }
     });
-  
   }
 
   onTaskStatusChange(event: MatCheckboxChange, task: ITask): void {

@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ITask } from '../../interfaces/task.interface';
 import { TaskService } from '../../services/task.service';
-import { CreateTaskComponent } from '../create-task/create-task.component';
 
 @Component({
   selector: 'app-update-task',
@@ -27,10 +26,7 @@ export class UpdateTaskComponent {
       description: [this.taskToEdit.description, Validators.required],
       status: [this.taskToEdit.status, Validators.required]
     });
-  
-    
   }
-
 
   onSaveTask(): void {
     if (this.taskForm.valid) {

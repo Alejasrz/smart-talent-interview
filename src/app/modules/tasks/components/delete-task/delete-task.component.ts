@@ -17,9 +17,7 @@ export class DeleteTaskComponent {
   ) { 
 
     this.idTask = data.idTask;
-    
   }
-
 
   onDeleteTask(): void {
     this.taskService.deleteTask(this.idTask);
