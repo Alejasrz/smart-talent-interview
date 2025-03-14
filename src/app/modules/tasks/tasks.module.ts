@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TasksRoutingModule } from './tasks-routing.module';
 import { TasksListComponent } from './pages/tasks-list/tasks-list.component';
 import { CreateTaskComponent } from './components/create-task/create-task.component';
 import { UpdateTaskComponent } from './components/update-task/update-task.component';
+import { DeleteTaskComponent } from './components/delete-task/delete-task.component';
+
+import { TasksRoutingModule } from './tasks-routing.module';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -18,7 +21,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { DeleteTaskComponent } from './components/delete-task/delete-task.component';
 
 
 @NgModule({
@@ -43,7 +45,6 @@ import { DeleteTaskComponent } from './components/delete-task/delete-task.compon
     ReactiveFormsModule,
     MatInputModule,
     MatDialogModule
-    
   ]
 })
 export class TasksModule { }

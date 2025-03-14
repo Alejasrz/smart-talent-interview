@@ -23,9 +23,7 @@ export class CreateTaskComponent {
       description: ['', Validators.required],
       status: ['Pendiente', Validators.required]
     });
-    
   }
-
 
   onSaveTask(): void {
     if (this.taskForm.valid) {
