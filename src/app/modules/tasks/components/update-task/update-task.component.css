@@ -1,0 +1,21 @@
+.container {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.form_div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
